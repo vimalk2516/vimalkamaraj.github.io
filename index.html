@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimal Kamaraj | VLSI Engineer</title>
+    <meta name="description" content="Portfolio of Vimal Kamaraj — VLSI Engineer specializing in Analog Layout, Physical Verification, and Semiconductor Design.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ========== SVG FILTER — Exact Liquid Glass Distortion ========== -->
+    <svg style="display:none" aria-hidden="true">
+        <filter id="glass-distortion" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.008 0.008" numOctaves="2" seed="92" result="noise" />
+            <feGaussianBlur in="noise" stdDeviation="0.02" result="blur" />
+            <feDisplacementMap in="SourceGraphic" in2="blur" scale="77" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <!-- Theme Transition Overlay -->
+    <div class="theme-overlay" id="theme-overlay"></div>
+
+    <!-- Scroll to Top -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========== FLOATING GLASS NAVBAR ========== -->
+    <header id="main-header">
+        <nav class="glass-nav">
+            <div class="nav-left">
+                <a href="#home" class="nav-logo">Vimal Kamaraj</a>
+            </div>
+
+            <ul class="nav-links" id="nav-links">
+                <div class="nav-slider" id="nav-slider"></div>
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <div class="nav-socials">
+                    <a href="https://linkedin.com/in/vimalk2516" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/vimalk2516" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:vimalk2516@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <a href="Vimal_Kamaraj_Resume.pdf" download class="nav-resume-btn">
+                    <i class="fas fa-download"></i><span>Resume</span>
+                </a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== ANIMATED BACKGROUND ========== -->
+    <div class="bg-layer">
+        <div class="bg-gradient"></div>
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+        <div class="bg-orb orb-4"></div>
+        <div class="bg-grid"></div>
+    </div>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero-section">
+            <div class="hero-wrapper">
+                <div class="hero-text reveal">
+                    <div class="hero-badge glass-pill">
+                        <span class="pulse-dot"></span> Available for Work
+                    </div>
+                    <h1>Hi, I'm <span class="text-gradient">Vimal Kamaraj</span></h1>
+                    <h2>VLSI Engineer & Layout Specialist</h2>
+                    <p>M.Tech in VLSI Design with specialized expertise in Analog Layout and Physical Verification. Passionate about translating complex schematic intent into high-precision silicon.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-glass btn-primary">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn-glass btn-outline">
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal">
+                    <div class="profile-glass-container">
+                        <div class="profile-ring"></div>
+                        <div class="profile-img-wrapper">
+                            <img src="profile.jpg" alt="Vimal Kamaraj" id="profile-img" onerror="this.style.display='none'; document.getElementById('fallback-icon').style.display='flex';">
+                            <div id="fallback-icon" class="fallback-avatar" style="display:none;">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="content-section">
+            <h2 class="section-heading reveal"><span class="heading-accent">01.</span> Professional Summary</h2>
+            <div class="about-layout">
+                <div class="glass-card card-lg reveal">
+                    <div class="card-shine"></div>
+                    <p>VLSI Engineer with an M.Tech in VLSI Design and specialized expertise in Analog Layout and Physical Verification.</p>
+                    <p>Proficient in the Cadence Virtuoso suite and Mentor Graphics (Siemens) Calibre for executing rigorous DRC/LVS/PEX sign-off across 45nm to 250nm CMOS nodes.</p>
+                    <p>Technically adept in VLSI Physical Design flows, including partitioning and routing, with a proven track record of ensuring signal integrity and area efficiency for first-pass silicon success.</p>
+                </div>
+                <div class="stats-row reveal">
+                    <div class="glass-card stat-card">
+                        <div class="card-shine"></div>
+                        <h3>8.55</h3>
+                        <p>M.Tech CGPA</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="card-shine"></div>
+                        <h3>342</h3>
+                        <p>GATE Score</p>
+                    </div>
+                    <div class="glass-card stat-card">
+                        <div class="card-shine"></div>
+                        <h3><i class="fas fa-trophy"></i></h3>
+                        <p>Viksit Bharat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="content-section">
+            <h2 class="section-heading reveal"><span class="heading-accent">02.</span> Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="glass-card skill-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>EDA Toolsets</h3>
+                    <p>Cadence Virtuoso (XL), Calibre, Tanner EDA, Magic, KLayout</p>
+                </div>
+                <div class="glass-card skill-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon"><i class="fas fa-check-double"></i></div>
+                    <h3>Verification</h3>
+                    <p>DRC, LVS, ERC, Antenna Checks, PEX</p>
+                </div>
+                <div class="glass-card skill-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Layout Techniques</h3>
+                    <p>Common-Centroid, Interdigitation, Symmetry Matching, Guard Rings</p>
+                </div>
+                <div class="glass-card skill-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                    <h3>Process Nodes</h3>
+                    <p>45nm, 90nm, 180nm, 250nm CMOS (GPDK)</p>
+                </div>
+                <div class="glass-card skill-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Analog Blocks</h3>
+                    <p>Op-Amps, Current Mirrors, Bandgap References, CMOS Logic, CVSL</p>
+                </div>
+                <div class="glass-card skill-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="skill-icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming / OS</h3>
+                    <p>SPICE, Verilog/VHDL, Python, Perl, Linux</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="content-section">
+            <h2 class="section-heading reveal"><span class="heading-accent">03.</span> Education</h2>
+            <div class="edu-grid">
+                <div class="glass-card edu-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="edu-badge">M.Tech</div>
+                    <h3>Indian Institute of Information Technology (IIITT)</h3>
+                    <h4>M.Tech in VLSI Engineering</h4>
+                    <p class="edu-meta"><i class="fas fa-map-marker-alt"></i> Tiruchirappalli, TN &nbsp;|&nbsp; 2025 – 2027</p>
+                    <p><strong>CGPA:</strong> 8.55 / 10</p>
+                </div>
+                <div class="glass-card edu-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="edu-badge">B.E</div>
+                    <h3>Dhirajlal Gandhi College of Technology</h3>
+                    <h4>B.E in Electronics & Communication</h4>
+                    <p class="edu-meta"><i class="fas fa-map-marker-alt"></i> Salem, TN &nbsp;|&nbsp; 2021 – 2025</p>
+                    <p><strong>Specialization:</strong> Fintech and Block Chain</p>
+                    <p><strong>CGPA:</strong> 8.35 / 10</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="content-section">
+            <h2 class="section-heading reveal"><span class="heading-accent">04.</span> Projects</h2>
+            <div class="projects-grid">
+                <div class="glass-card project-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="project-header">
+                        <i class="fas fa-folder-open project-icon"></i>
+                        <span class="project-date">Feb – Mar 2026</span>
+                    </div>
+                    <h3>High Gain Op-Amp</h3>
+                    <p class="project-tech">Analog Layout | 45nm/90nm CMOS | Cadence Virtuoso</p>
+                    <ul>
+                        <li>Developed high-precision layout.</li>
+                        <li>Optimized two-stage floorplanning & device placement minimizing cross-talk.</li>
+                        <li>Achieved 72 dB gain, 2.2 MHz UGB, 31 µW power via post-layout verification.</li>
+                        <li>Executed DRC/LVS/PEX sign-off for first-pass silicon reliability.</li>
+                    </ul>
+                </div>
+                <div class="glass-card project-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="project-header">
+                        <i class="fas fa-folder-open project-icon"></i>
+                        <span class="project-date">Jan – Feb 2026</span>
+                    </div>
+                    <h3>Precision Current Mirror Array</h3>
+                    <p class="project-tech">Analog Layout | 180nm/250nm CMOS | Tanner EDA</p>
+                    <ul>
+                        <li>Designed CMOS current mirror circuits with optimized W/L ratios for accurate current replication.</li>
+                        <li>Performed DRC/LVS/PEX verification and analyzed non-idealities to improve stability.</li>
+                    </ul>
+                </div>
+                <div class="glass-card project-card reveal">
+                    <div class="card-shine"></div>
+                    <div class="project-header">
+                        <i class="fas fa-folder-open project-icon"></i>
+                        <span class="project-date">Nov – Dec 2025</span>
+                    </div>
+                    <h3>Standard Cell Design & Verification</h3>
+                    <p class="project-tech">Full Custom Physical Design | 180nm CMOS | KLayout</p>
+                    <ul>
+                        <li>Developed full-custom layouts for standard logic cells (NAND, Full Adder) optimized for area and speed.</li>
+                        <li>Conducted GDSII inspection and verification using KLayout to ensure mask integrity.</li>
+                        <li>Implemented CVSL logic layouts for high-speed differential paths.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements" class="content-section">
+            <h2 class="section-heading reveal"><span class="heading-accent">05.</span> Achievements & Leadership</h2>
+            <div class="glass-card achievements-card reveal">
+                <div class="card-shine"></div>
+                <div class="achievement-item">
+                    <i class="fas fa-star"></i>
+                    <div><strong>Viksit Bharat Delegate:</strong> National dialogue on India Semiconductor Mission. (Jan 2026)</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-certificate"></i>
+                    <div><strong>NPTEL Certified:</strong> VLSI Physical Design (Partitioning, Floorplanning, Routing). (May 2026)</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-award"></i>
+                    <div><strong>GATE Qualified:</strong> Electronics and Communication Engineering Score 342. (May 2026)</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-leaf"></i>
+                    <div><strong>OPPO Gen-Green:</strong> Top 100 Intern for sustainable hardware initiatives. (Aug 2025)</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div><strong>Best Academic Performance:</strong> Excellence in Overall academics. (Nov 2024)</div>
+                </div>
+                <div class="achievement-item">
+                    <i class="fas fa-medal"></i>
+                    <div><strong>Engineers' Day:</strong> 2nd Prize for precision analog circuit implementation. (Nov 2023)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="content-section">
+            <h2 class="section-heading reveal"><span class="heading-accent">06.</span> Get In Touch</h2>
+            <div class="glass-card contact-card reveal">
+                <div class="card-shine"></div>
+                <p class="contact-intro">I'm currently open for new opportunities in VLSI Engineering and Analog Layout. Feel free to reach out!</p>
+                <div class="contact-grid">
+                    <a href="tel:+918111012516" class="contact-item glass-card">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8111012516</span>
+                    </a>
+                    <a href="mailto:vimalk2516@gmail.com" class="contact-item glass-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>vimalk2516@gmail.com</span>
+                    </a>
+                    <div class="contact-item glass-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Tiruchirappalli / Salem, India</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer reveal">
+        <p>&copy; <span id="year"></span> Vimal Kamaraj. <span id="admin-trigger">Built</span> with Liquid Glass Design.</p>
+        <div id="admin-stats" class="glass-card" style="display:none; padding:10px 20px; font-size:0.85rem; margin-top:10px;">
+            <i class="fas fa-chart-line"></i> Total Page Views: <span id="view-count">—</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
